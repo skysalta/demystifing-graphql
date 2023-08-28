@@ -1,0 +1,13 @@
+{
+    "user": {
+        "id": "string",
+        "username": "string"
+    },
+    "task": {
+        "id": "string",
+        "createdAt": "number",
+        "name": "string",
+        "type": "string",
+        "description": "string"
+    }
+}

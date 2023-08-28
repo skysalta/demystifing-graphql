@@ -1,0 +1,30 @@
+{
+    "user": {
+      "id": "jBWMVGjm50l6LGwepDoty",
+      "username": "Sky"
+    },
+    "task": [
+      {
+        "id": "strjBWMVGjm50l6LGwepDotyaaing",
+        "createdAt": 1693047101615,
+        "name": "First Task",
+        "type": "IT",
+        "description": "First task description is short"
+      },
+      {
+        "id": "strjBWMVGjm50l6fgdjkjdfhguid2ing",
+        "createdAt": 1693047101615,
+        "name": "Second Task",
+        "type": "BA",
+        "description": "Second task description is short"
+      },
+      {
+        "id": "AlrNZvrQVUCWLBQ70ksqx",
+        "createdAt": 1693210542673,
+        "name": "3rd Task",
+        "type": "BA",
+        "description": "3rd task desc",
+        "user": "jBWMVGjm50l6LGwepDoty"
+      }
+    ]
+}
