@@ -39,16 +39,11 @@ export default function Tasks () {
     }
 
     return (
-        <div className="page tasks-page">
+        <div className="w-100 px-20 pt-8">
         <section>
-            <div className="row betwee-xs middle-xs">
-                <div className="col-xs-10">
-                    <h1>Tasks</h1>
-                </div>
-
-                <div className="col-xs-2">
-                    <button onClick={() => setModal(true)}>new task</button>
-                </div>
+            <div className="flex justify-between mb-4">
+                    <h1 className='font-bold text-3xl'>Tasks</h1>
+                    <button className='bg-blue-500 px-4 text-white py-1 rounded mr-8' onClick={() => setModal(true)}>New Task</button>
                 </div>
             </section>
             <section>

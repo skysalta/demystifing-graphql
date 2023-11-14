@@ -4,13 +4,12 @@ import { withRouter } from 'react-router'
 
 const Header = () =>
     <header>
-        <div className="row">
-        <div className="col-xs">
-            <Link to="/" >
+        <div className='flex'>
+            <Link to="/" className='align-center link'>
                 Home
             </Link>
         </div>
-        </div>
+        
     </header>
 
 export default withRouter(Header)

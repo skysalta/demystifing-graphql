@@ -27,9 +27,9 @@ export default function NewTask({onSubmit, onCancel}) {
 
     return (
         <div className="new-task page">
-            <h1>New Task</h1>
-            <div className="box">
-                <form onSubmit={submit}>
+            <h1 className='pb-2'>New Task</h1>
+            <div className="overflow-hidden shadow-lg p-6 bg-white rounded">
+                <form onSubmit={submit} className='flex flex-col gap-6'>
                     <Select
                         value={activeOption}
                         defaultValue={options[0]}
@@ -38,7 +38,7 @@ export default function NewTask({onSubmit, onCancel}) {
                     />
 
                     <input
-                        className="input"
+                        className="input capitalize"
                         type="text"
                         placeholder="task name"
                         value={name}
@@ -47,15 +47,17 @@ export default function NewTask({onSubmit, onCancel}) {
                     />
 
                     <input
-                        className="input"
+                        className="input capitalize"
                         type="text"
                         placeholder="task description"
                         value={description}
                         onChange={e => setDescription(e.target.value)}
                         required
                     />
-                    <a className="error button" onClick={cancel}>cancel</a>
-                    <button className="submit button" type="submit" name="submit">add task</button>
+                    <div className='flex flex-col gap-2'>
+                        <a className="bg-red-500 px-4 py-1 text-white rounded hover:cursor-pointer capitalize" onClick={cancel}>cancel</a>
+                        <button className="bg-blue-500 px-4 text-white py-1 rounded capitalize" type="submit" name="submit">add task</button>
+                    </div>
                 </form>
             </div>
         </div>
